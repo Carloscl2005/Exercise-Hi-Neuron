@@ -29,7 +29,7 @@ tab1, tab2, tab3 = st.tabs(["One entry", "Two entries", "Three entries and bias"
 #----------------
 # Page 1
 #----------------
-tab1_weight = tab1.slider("Weight: ", min_value=1.0, max_value=5.0)
+tab1_weight = tab1.slider("Weight: ", min_value=0.0, max_value=5.0)
 tab1_entry = tab1.number_input("Enter the input value")
 tab1_button = tab1.button("Calculate output", key="output_1")
 
@@ -46,10 +46,10 @@ if tab1_button:
 with tab2:
     col1, col2 = st.columns(2)
     
-    tab2_weight_1 = col1.slider("Weight W0", min_value=1.0, max_value=5.0, key="tab2_weight_0")
+    tab2_weight_1 = col1.slider("Weight W0", min_value=0.0, max_value=5.0, key="tab2_weight_0")
     tab2_entry_1  = col1.number_input("Input X0", key="tab2_entry_0")
 
-    tab2_weight_2 = col2.slider("Weight W1", min_value=1.0, max_value=5.0, key="tab2_weight_1")
+    tab2_weight_2 = col2.slider("Weight W1", min_value=0.0, max_value=5.0, key="tab2_weight_1")
     tab2_entry_2  = col2.number_input("Input X1", key="tab2_entry_1")
 
 tab2_button = tab2.button("Calculate output", key="output_2")
@@ -68,13 +68,13 @@ with tab3:
 
     # Weights, inputs and bias
     #------------------------
-    tab3_weight_1 = col1.slider("Weight W0", min_value=1.0, max_value=5.0, key="tab3_weight_0")
+    tab3_weight_1 = col1.slider("Weight W0", min_value=0.0, max_value=5.0, key="tab3_weight_0")
     tab3_entry_1  = col1.number_input("Input X0", key="tab3_input_0")
 
-    tab3_weight_2 = col2.slider("Weight W1", min_value=1.0, max_value=5.0, key="tab3_weight_1")
+    tab3_weight_2 = col2.slider("Weight W1", min_value=0.0, max_value=5.0, key="tab3_weight_1")
     tab3_entry_2  = col2.number_input("Input X1", key="tab3_input_1")
 
-    tab3_weight_3 = col3.slider("Weight W2", min_value=1.0, max_value=5.0, key="tab3_weight_2")
+    tab3_weight_3 = col3.slider("Weight W2", min_value=0.0, max_value=5.0, key="tab3_weight_2")
     tab3_entry_3  = col3.number_input("Input X2", key="tab3_input_2")
 
     tab3_bias = tab3.number_input("Enter the bias value: ")
