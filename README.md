@@ -61,4 +61,4 @@ This step-by-step progression increases complexity while keeping the inderlying 
 
 ## 🌐 Deployment
 
-The application is hosted on **Streamlit Cloud**, allowing easy access and execution without local setup.
+The application is hosted on <a href="https://exercise-hi-neuron-csdas.streamlit.app/">**Streamlit Cloud**</a>, allowing easy access and execution without local setup.
