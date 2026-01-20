@@ -1,5 +1,5 @@
 import streamlit as st
-
+import os
 
 # Introduction
 st.markdown(
@@ -14,7 +14,10 @@ st.markdown(
 )
 
 
-st.image("images/image.png")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+IMAGE_PATH = os.path.join(BASE_DIR, "images", "image.png")
+st.image(IMAGE_PATH)
+
 st.title("Hi neuron!")
 
 # Tabs
