@@ -6,4 +6,4 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT ["streamlit", "run", "src/hi_neuron.py"]
+ENTRYPOINT ["streamlit", "run", "hi_neuron.py"]
